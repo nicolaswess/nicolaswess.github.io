@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+  background:linear-gradient( to bottom, #414141, #000000);
   width:100%;
-  
+  color: white;
 }
 .header {
   font-family: 'Belleza', sans-serif;
@@ -16,8 +16,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #bcc6cc;
-  color: #545454;
+  background-color:  #414141;
+  color: white;
 }
 .header img {
   padding-right: 5%;
@@ -31,7 +31,6 @@
   margin:auto;
   margin-top: 100px;
   padding-top: 50;
-  color: #545454;
 
 }
 .about p {
