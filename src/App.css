@@ -26,16 +26,23 @@
 .header div {
   padding-right: 2.5%;
 }
-.about {
+#about {
   width: 50%;
   margin:auto;
   margin-top: 100px;
-  padding-top: 50;
+  padding-top: 50px;
 
 }
-.about p {
+p {
   text-align: start;
 }
+
+#research {
+  width: 50%;
+  margin:auto;
+  padding-top: 50px;
+}
+
 
 .App-logo {
   height: 40vmin;
