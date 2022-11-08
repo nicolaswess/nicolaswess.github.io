@@ -24,7 +24,7 @@
   padding-left: 2.5%;
 }
 .header div {
-  padding-right: 2.5%;
+  padding-right: 7%;
 }
 #about {
   width: 50%;
@@ -65,16 +65,68 @@ p {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#cv {
+  width: 50%;
+  margin:auto;
+  padding-top: 100px;
+}
+.cvItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cvItems button {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #414141;
+}
+.cvItems button a {
+  color: white;
+  text-decoration: none;
+}
+#footer a {
+  margin: 10px;
+}
+#footer p {
+  margin: 20px;
+}
+#footer .container p {
+  align-self: flex-end;
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#footer img {
+  width: 40px;
+
+}
+#footer .container{
+  display: flex;
+
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: -140px;
+  font-size: small;
+  width: 140%;
+}
+.menu-items a {
+  color: #414141;
+  background-color: lightgrey;
+  text-decoration: none;
+}
+.hidden {
+  display:none;
+}
+.nav button {
+  background-color: #414141;
+  position: fixed;
+  top: 0;
+  margin-top: 20px;
 }
