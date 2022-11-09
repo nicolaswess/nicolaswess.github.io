@@ -1,7 +1,7 @@
 export default function About() {
   return(
     <div id='about'>
-      <img src='../headshot.png' alt='Headshot' height='300px' style={{borderRadius:'50%'}}/>
+      <img src='../Nicologo.png' alt='Headshot' height='300px' />
       <h3>Strategy and Business Economics PhD Student</h3>
       <hr style={{border: '1px solid white', width: '75%'}} />
       <h4>UBC Sauder School of Business</h4>
