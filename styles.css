@@ -49,6 +49,7 @@ nav {
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.02em;
+  margin-left: max(0px, calc((100vw - var(--max)) / 2));
 }
 
 .nav-links {
