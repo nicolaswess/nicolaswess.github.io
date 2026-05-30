@@ -52,6 +52,22 @@ nav {
   margin-left: max(0px, calc((100vw - var(--max)) / 2));
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-linkedin {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+.nav-linkedin:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
