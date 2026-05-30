@@ -292,6 +292,7 @@ footer {
   nav { padding: 1rem 1.2rem; position: relative; }
   .nav-name { font-size: 1.1rem; }
   .nav-toggle { display: flex; }
+  .nav-linkedin { order: -1; }
   .nav-links {
     display: none;
     position: absolute;
