@@ -253,6 +253,6 @@ footer {
   .nav-name { font-size: 1.1rem; }
   main { padding: 0 1.2rem 4rem; }
   .about-grid { grid-template-columns: 1fr; }
-  .about-grid .profile-photo { max-width: 320px; }
-  .paper-body { grid-template-columns: 1fr; }
+  .about-grid .profile-photo { max-width: 320px; margin: 0 auto; }
+  .paper-figure { float: none; width: 100%; margin: 0 0 1rem 0; }
 }
