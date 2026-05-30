@@ -4,18 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicolas Wesseler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <nav>
-    <div class="nav-name">Nicolas Wesseler</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="CV/CV.pdf" target="_blank">CV</a></li>
-    </ul>
+    <div class="nav-links">
+      <a href="#about">Home</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="CV/CV.pdf" target="_blank">CV</a>
+    </div>
   </nav>
 
   <main>
@@ -23,27 +24,26 @@
     <!-- ===================== ABOUT ===================== -->
     <section id="about">
       <div class="about-grid">
-        <div class="about-photo">
-          <img src="nicolas_image.jpeg">
-        </div>
+        <img src="nicolas_image.jpg" alt="Nicolas Wesseler" class="profile-photo" />
         <div class="about-text">
           <h1>Nicolas Wesseler</h1>
           <p class="subtitle">Ph.D. Candidate &mdash; UBC Sauder School of Business</p>
 
           <p>
             I am a Ph.D. candidate in Strategy and Business Economics at the
-            <a href="https://www.sauder.ubc.ca/" target="_blank">Sauder School of Business</a>
-            at the University of British Columbia. My research lies at the intersection of
+            Sauder School of Business at the University of British Columbia. My research lies at the intersection of
             <strong>International Trade</strong>, <strong>Political Economy</strong>, and
             <strong>Economic History</strong>.
           </p>
           <p>
-            My job market paper studies how geopolitical alignment shaped international trade
-            during the Cold War, using exogenous shifts in political alignment—coups,
-            revolutions, and close elections—to establish causality. This research is supported by a <a href="https://grp.cepr.org/recipe/projects/does-trade-follow-flag-evidence-cold-war-trade-fragmentation" target="_blank">ReCIPE PhD Research Grant</a> from the UK Foreign, Commonwealth and Development Office.
+            My job market paper estimates the trade costs of geopolitical rivalry during the
+            Cold War, using successful versus failed coups to identify the causal effect of
+            ideology on trade flows. This research is supported by the UK Foreign, Commonwealth
+            and Development Office.
           </p>
           <p>
-            I have taught <a href="https://mybcom.sauder.ubc.ca/courses-money-enrolment/courses/comm-394" target="_blank"><em>Environment, Society and Government</em> (COMM 394)</a> at Sauder, for which I received the UBC Killam Graduate Teaching Award.
+            I have taught <em>Environment, Society and Government</em> (COMM 394)
+            at Sauder, for which I received the UBC Killam Graduate Teaching Award.
           </p>
           <p>
             My dissertation committee consists of
@@ -52,61 +52,101 @@
             <a href="https://nathannunn.arts.ubc.ca" target="_blank">Nathan Nunn</a>.
           </p>
 
-          <p class="contact-line">
-            <a href="mailto:nicolas.wesseler@sauder.ubc.ca">nicolas.wesseler@sauder.ubc.ca</a>
-            &ensp;&bull;&ensp;
-            <a href="CV/CV.pdf" target="_blank">Curriculum Vitae</a>
+          <p class="contact">
+            You can find my CV <a href="CV/CV.pdf" target="_blank">here</a>.
+            You can reach me at <a href="mailto:nicolas.wesseler@sauder.ubc.ca">nicolas.wesseler@sauder.ubc.ca</a>.
           </p>
         </div>
       </div>
     </section>
 
+    <hr />
+
     <!-- ===================== RESEARCH ===================== -->
     <section id="research">
       <h2>Research</h2>
 
+      <h3>Working Papers</h3>
+
       <div class="paper">
         <div class="paper-title">
-          Does Trade Follow the Flag? Evidence from Cold War Geopolitical Fragmentation
+          The Cost of Rivalry: Geopolitical Fragmentation and Trade during the Cold War
         </div>
         <div class="paper-meta">
-          with <a href="https://timothy-meyer.net" target="_blank">Timothy Meyer</a> &nbsp;&bull;&nbsp; <span class="tag tag-jmp">Job Market Paper</span>
+          with <a href="https://timothy-meyer.net" target="_blank">Timothy Meyer</a>
+          &nbsp;&middot;&nbsp; <span class="jmp">Job Market Paper</span>
         </div>
-        <details>
+        <div class="paper-body">
+          <div class="paper-figure">
+            <img src="flag_figure.png" alt="Main result figure" />
+          </div>
+        <details open>
           <summary>Abstract</summary>
           <p>
-            How much does geopolitical alignment affect international trade? We study this
-            question using the Cold War as a natural experiment in geopolitical fragmentation.
-            Leveraging detailed bilateral trade data from 1945–1990 and measures of ideological
-            distance derived from United Nations General Assembly voting patterns, we document
-            that politically distant countries faced substantially higher trade frictions. The
-            tariff equivalent of the ideological gap between the United States and Soviet Union
-            was approximately 25%, rising to 38% for superpower trade relationships—comparable
-            to the trade costs of armed conflict. However, these gravity estimates confound
-            causation with reverse causality and omitted variables. To establish causality, we
-            exploit sudden shifts in political alignment caused by coups, revolutions, and close
-            elections as exogenous shocks to bilateral political distance. Using event study
-            designs, we find that successful coups that increased (decreased) political distance
-            with trading partners led to significant reductions (increases) in bilateral trade
-            flows, with effects of 15–20% within three to four years. While smaller than the
-            correlational estimates, these causal effects were substantial and strongest when at
-            least one superpower was involved. Importantly, both correlational and causal effects
-            disappeared entirely after the Cold War ended in 1990. Our findings demonstrate that
-            geopolitical fragmentation substantially reshapes international trade patterns, though
-            standard gravity approaches overstate the magnitude, with important implications for
-            understanding current trends toward economic decoupling.
+            How does geopolitical alignment affect international trade? We study this question
+            using the Cold War as a natural experiment in geopolitical fragmentation. Using
+            detailed bilateral trade data from 1945&ndash;1990, we document that politically
+            distant countries faced substantially higher trade frictions. The tariff equivalent
+            of the ideological gap between the United States and Soviet Union was approximately
+            21%, rising to 38% for direct superpower relationships, comparable to the trade costs
+            of armed conflict. To establish causality, we exploit sudden shifts in political
+            alignment caused by coups, comparing successful and failed attempts. We provide
+            evidence that ideology shaped trade flows independently of observable policy
+            instruments such as sanctions and trade agreements. Critically, effects disappear
+            after the fall of the Iron Curtain, demonstrating that these barriers reflected
+            active policy choices under superpower rivalry rather than permanent features of
+            political systems. Embedding our estimates in a quantitative trade model, we find
+            that fragmentation imposed the heaviest welfare costs on non-aligned countries, who
+            faced political distance barriers to both blocs simultaneously. We further show that
+            the Western Cold War bloc was economically self-reinforcing, a property the
+            contemporary U.S.&ndash;China rivalry does not share.
           </p>
         </details>
+        </div>
       </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          Hegemonic Competition with Carrots and Sticks
+        </div>
+        <div class="paper-meta">
+          with <a href="https://timothy-meyer.net" target="_blank">Timothy Meyer</a>
+        </div>
+        <div class="paper-body">
+          <div class="paper-figure">
+            <img src="sticks_figure.png" alt="Main result figure" />
+          </div>
+        <details open>
+          <summary>Abstract</summary>
+          <p>
+            Hegemonic powers use economic tools to influence the geopolitical alignment of third
+            countries. We develop a model in which two competing hegemons use direct payments
+            (<em>carrots</em>) and economic threats (<em>sticks</em>) to influence third countries.
+            Guided by the model, we measure carrots and sticks using historical data from the Cold
+            War. We use our measures to empirically estimate the effects of carrots and sticks on
+            geopolitical alignment. These tools create political alignment, but are expensive. We
+            combine the model with the empirical estimates to compute the geopolitical return on
+            foreign aid and evaluate the consequences of the USAID shutdown for the modern
+            U.S.&ndash;China competition.
+          </p>
+        </details>
+        </div>
+      </div>
+
+      <h3>Publications</h3>
 
       <div class="paper">
         <div class="paper-title">
           Trade Reliance and Economic Sanctions
         </div>
         <div class="paper-meta">
-          <span class="tag tag-gray">Revise &amp; Resubmit, <em>Review of World Economics</em></span>
+          <em>Forthcoming 2026, Review of World Economics</em>
         </div>
-        <details>
+        <div class="paper-body">
+          <div class="paper-figure">
+            <img src="sanctions_figure.png" alt="Main result figure" />
+          </div>
+        <details open>
           <summary>Abstract</summary>
           <p>
             What determines the success or failure of economic sanctions? Theoretical research
@@ -123,6 +163,7 @@
             different model specifications, samples, and databases.
           </p>
         </details>
+        </div>
       </div>
 
       <div class="paper">
@@ -130,10 +171,14 @@
           The Glass Web: Kinship Networks, Female Executives and Firm Outcomes in the Middle East
         </div>
         <div class="paper-meta">
-          with <a href="https://www.alessandra-l-gonzalez.com" target="_blank">Alessandra L. González</a> &nbsp;&bull;&nbsp;
-          <a href="https://doi.org/10.1111/ecot.70037" target="_blank"><em>Economics of Transition and Institutional Change</em></a>
+          with <a href="https://www.alessandra-l-gonzalez.com" target="_blank">Alessandra L. González</a>
+          &nbsp;&middot;&nbsp; <a href="https://doi.org/10.1111/ecot.70037" target="_blank"><em>Economics of Transition and Institutional Change</em></a>, 2026
         </div>
-        <details>
+        <div class="paper-body">
+          <div class="paper-figure">
+            <img src="kinship_figure.png" alt="Main result figure" />
+          </div>
+        <details open>
           <summary>Abstract</summary>
           <p>
             Leveraging data on firms operating in the Gulf Cooperation Council (GCC) countries
@@ -149,91 +194,50 @@
             gaps.
           </p>
         </details>
+        </div>
       </div>
+
+      <h3>Work in Progress</h3>
 
       <div class="paper">
         <div class="paper-title">
-          Sticks or Carrots? A New Perspective on Geoeconomic Competition
+          Hitting Where It Hurts: Strategic Retaliation to Trump's Trade War
         </div>
         <div class="paper-meta">
-          with <a href="https://timothy-meyer.net" target="_blank">Timothy Meyer</a>
+          with <a href="https://blogs.ubc.ca/johnries/" target="_blank">John Ries</a>
         </div>
-        <details>
-          <summary>Abstract</summary>
-          <p>
-            We combine theory with historical data to examine how hegemonic competition impacts
-            third countries. We develop a bargaining model in which two competing hegemons use
-            direct payments (<em>carrots</em>) and economic power (<em>sticks</em>) to influence
-            third countries. To quantify the model, we use a measure of power derived from a
-            quantitative model of international trade as well as newly collected data on U.S. and
-            Soviet activities in non-aligned countries during the Cold War. We show that both
-            carrots and sticks induce alignment with a hegemon. Consistent with the model, the
-            data exhibits a hump-shape between carrots and sticks, so that non-aligned countries
-            can benefit from hegemonic competition when the coercive power of both hegemons is
-            matched evenly.
-          </p>
-        </details>
       </div>
 
     </section>
+
+    <hr />
 
     <!-- ===================== TEACHING ===================== -->
     <section id="teaching">
       <h2>Teaching</h2>
 
       <h3>Instructor &mdash; University of British Columbia</h3>
-      <table class="teaching-table">
-        <tbody>
-          <tr>
-            <td>COMM 394: Environment, Society and Government</td>
-            <td>Undergraduate</td>
-            <td>Summer 2025</td>
-            <td class="eval">Evaluation: 4.9 / 5.0<br><span class="award">UBC Killam Graduate Teaching Award 2025/2026</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <ul>
+        <li>
+          COMM 394: Environment, Society and Government &mdash; Undergraduate, Summer 2025
+          <br><span class="note">Evaluation: 4.9 / 5.0 &nbsp;&middot;&nbsp; UBC Killam Graduate Teaching Award 2025/2026</span>
+        </li>
+      </ul>
 
       <h3>Teaching Assistant &mdash; University of British Columbia</h3>
-      <table class="teaching-table">
-        <tbody>
-          <tr>
-            <td>COMR 493: Strategic Management in Business</td>
-            <td>Undergraduate</td>
-            <td>Winter 2024, 2023</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>COMR 491: Strategic Management</td>
-            <td>Undergraduate</td>
-            <td>Winter 2023</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>COEC 498: Advanced International Business Management</td>
-            <td>Undergraduate</td>
-            <td>Winter 2023</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>COMM 498: International Business Management</td>
-            <td>Undergraduate</td>
-            <td>Winter 2022</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ECON 455: International Trade</td>
-            <td>Undergraduate</td>
-            <td>Winter 2022, 2023</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+      <ul>
+        <li>COMR 493: Strategic Management in Business &mdash; Undergraduate, Winter 2024, 2023</li>
+        <li>COMR 491: Strategic Management &mdash; Undergraduate, Winter 2023</li>
+        <li>COEC 498: Advanced International Business Management &mdash; Undergraduate, Winter 2023</li>
+        <li>COMM 498: International Business Management &mdash; Undergraduate, Winter 2022</li>
+        <li>ECON 455: International Trade &mdash; Undergraduate, Winter 2022, 2023</li>
+      </ul>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Nicolas Wesseler &mdash; UBC Sauder School of Business</p>
+    <p>&copy; 2026 Nicolas Wesseler</p>
   </footer>
 
 </body>
