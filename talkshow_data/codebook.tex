@@ -1,0 +1,131 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\hypersetup{colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+\setstretch{1.15}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {}[\titlerule]
+\titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    {\LARGE \textbf{German Political Talk Show Guests, 2008--2026}} \\[0.3em]
+    {\large Codebook} \\[0.3em]
+    Nicolas Wesseler \\
+    \href{https://nicolas-wesseler.net/}{nicolas-wesseler.net}
+\end{center}
+
+\vspace{1em}
+
+\texttt{talkshow\_guests.csv} has one row for every guest in every episode of six German talk
+shows: Markus Lanz, Maybrit Illner, Maischberger, Anne Will, hart aber fair and Caren Miosga. It
+has 13{,}747 rows: 3{,}096 episodes, broadcast between 11 June 2008 and 13 October 2026, with
+4{,}216 different guests.
+
+\section*{How to cite}
+
+If you use this data, please cite it as:
+
+\begin{quote}
+\noindent\ttfamily Wesseler, Nicolas (2026). German Political Talk Show Guests, 2008--2026 [Data set]. \url{https://nicolas-wesseler.net/#data}
+\end{quote}
+
+BibTeX:
+
+\begin{quote}
+\ttfamily
+\noindent @misc\{wesseler2026talkshows,\\
+\hspace*{1.5em}author = \{Wesseler, Nicolas\},\\
+\hspace*{1.5em}title = \{German Political Talk Show Guests, 2008--2026\},\\
+\hspace*{1.5em}year = \{2026\},\\
+\hspace*{1.5em}howpublished = \{\textbackslash url\{https://nicolas-wesseler.net/\#data\}\}\\
+\}
+\end{quote}
+
+\section*{Variables}
+
+\begin{longtable}{@{}p{3.1cm}p{9cm}r@{}}
+\toprule
+\textbf{Variable} & \textbf{Meaning} & \textbf{Empty} \\
+\midrule
+\endhead
+\texttt{show} & Name of the show. & 0\% \\
+\texttt{date} & Broadcast date (YYYY-MM-DD). & 0\% \\
+\texttt{episode\_title} & Title of the episode (in German). Markus Lanz episodes have no topic title; they are called ``Folge 1369'' or ``Sendung vom 14.09.2023''. & 0\% \\
+\texttt{episode\_url} & Link to the episode page on fernsehserien.de. & 0\% \\
+\texttt{guest\_name} & Name of the guest. & 0\% \\
+\texttt{guest\_role} & Who the guest is, as listed for this episode (in German), e.g. ``\"Okonom'' or ``Bundesgesundheitsminister''. & 1.7\% \\
+\texttt{party} & Party of the guest, for politicians of CDU, CSU, SPD, Gr\"une, FDP, Linke, AfD, BSW and Freie W\"ahler. Empty for everyone else, including non-politicians. & 69.3\% \\
+\texttt{gender} & \texttt{female} or \texttt{male}. Not reported by anyone: derived from the guest's job title (e.g. ``\"Okonomin'') or first name, so it can be wrong. Empty if it could not be derived. & 4.0\% \\
+\texttt{main\_theme} & Main topic of the episode, one of the 21 topics listed below. & 0\% \\
+\texttt{theme\_2} & Second topic of the episode, if there is one. & 4.0\% \\
+\texttt{theme\_3} & Third topic of the episode, if there is one. & 17.6\% \\
+\texttt{theme\_4} & Fourth topic of the episode, if there is one. & 53.9\% \\
+\texttt{birth\_year} & Year of birth, from Wikidata. Only available for politicians. & 69.9\% \\
+\texttt{birth\_state} & German state of birth, from Wikidata. Only available for politicians born in Germany. & 71.2\% \\
+\bottomrule
+\end{longtable}
+
+The topic columns were assigned by an AI model (Claude Opus 5.5) that read the episode
+description. The topics are listed in order of importance.
+
+The 21 topics: Covid-19; Ukraine war \& Russia; Middle East conflicts; International politics \&
+USA; Migration \& refugees; Climate \& energy; Economy \& finance; Social policy, pensions \&
+labour; German domestic politics \& elections; Far right \& extremism; Security, terror \&
+military; Crime, justice \& law; Health \& medicine (not Covid); Science \& technology; Religion
+\& ethics; Personal stories \& fate; Society, family \& education; Culture, film \& music; Media
+\& celebrity; Sports; Other.
+
+\section*{Which years can be used}
+
+Guest lists exist only for part of the episodes, and the file contains only episodes that have
+one. For other years, most episodes are missing.
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Show} & \textbf{Years} \\
+\midrule
+Markus Lanz & 2013--2026 \\
+Maybrit Illner & 2014--2026 \\
+Maischberger & 2015--2023 (almost no guest lists from 2024) \\
+Anne Will & 2016--2023 (the show ended in 2023) \\
+Hart aber fair & 2015--2026 \\
+Caren Miosga & 2024--2026 (the show started in 2024) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Source}
+
+\textbf{Episodes and guests:} the episode guides (Episodenguide) of
+\href{https://www.fernsehserien.de}{fernsehserien.de}, one per show:
+\href{https://www.fernsehserien.de/markus-lanz/episodenguide}{Markus Lanz},
+\href{https://www.fernsehserien.de/maybrit-illner/episodenguide}{Maybrit Illner},
+\href{https://www.fernsehserien.de/maischberger-ard/episodenguide}{Maischberger},
+\href{https://www.fernsehserien.de/anne-will/episodenguide}{Anne Will},
+\href{https://www.fernsehserien.de/hart-aber-fair/episodenguide}{hart aber fair} and
+\href{https://www.fernsehserien.de/caren-miosga/episodenguide}{Caren Miosga}.
+Date, title and description of each episode, and the guest names and roles that are listed in the
+description, were extracted from the pages as saved on 14 October 2026.
+
+\textbf{Party, birth year and birth state:} \href{https://www.wikidata.org}{Wikidata} (CC0),
+queried on 14--15 October 2026, and the guest lists.
+
+\textbf{Topics:} assigned with an AI model (Claude Opus 5.5) from the episode descriptions.
+
+\textbf{Gender:} derived from job titles and first names.
+
+\end{document}
